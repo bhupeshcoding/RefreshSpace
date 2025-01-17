@@ -1,0 +1,145 @@
+/* App.css */
+
+/* Global styles */
+
+body {
+  background-image: url("https://files.oaiusercontent.com/file-CJ15rJJmnK85zwKoofXPQF?se=2025-01-17T08%3A19%3A51Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D0445dcbf-9915-4056-87ef-1ac6b52ab9f4.webp&sig=EDsiD/PhWvjREVVRm5vMorgHPtcWxEcVp5I54qMJJrA%3D"); /* Replace with the actual image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: Arial, sans-serif; /* Optionally add a clean font */
+}
+
+.app {
+  margin: 0 auto;
+  height: 100vh; /* Full viewport height */
+  width: 90%;
+}
+
+/* Center the container */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Flashcard container */
+.flashcard-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Flashcard styles */
+.flashcard {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Flashcard button styling */
+button {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Form styles inside .add-flashcard */
+.add-flashcard form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  width: 800px;
+}
+
+input[type="text"] {
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  /* Adjust the container width */
+  .app {
+    width: 90%; /* 90% width on tablets */
+  }
+
+  /* Adjust flashcard width */
+  .flashcard {
+    width: 100%; /* Take up full width */
+    padding: 15px; /* Reduce padding */
+  }
+
+  /* Adjust button size */
+  button {
+    width: 100%; /* Full width for buttons */
+    font-size: 14px;
+  }
+
+  /* Adjust form inputs */
+  input {
+    width: 90%; /* 90% width for inputs on smaller screens */
+  }
+
+  .add-flashcard form {
+    width: 100%; /* Full width form */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .app {
+    width: 95%; /* 95% width on mobile */
+  }
+
+  .flashcard {
+    width: 100%; /* Full width flashcard */
+    padding: 10px; /* Reduce padding */
+  }
+
+  /* Adjust the logo, text sizes, and other content */
+  .flashcard button {
+    font-size: 14px; /* Smaller button text */
+  }
+
+  input {
+    width: 100%; /* Full width input fields */
+    font-size: 14px; /* Slightly smaller font size */
+  }
+}
+
+/* Landscape mode adjustments */
+@media (orientation: landscape) {
+  .app {
+    width: 75%; /* Narrower width on landscape mode */
+  }
+  .flashcard {
+    width: 800px; /* Slightly narrower flashcard */
+  }
+}

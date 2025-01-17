@@ -1,0 +1,68 @@
+.header {
+  background: linear-gradient(
+    to right,
+    #3b82f6,
+    #9333ea
+  ); /* Gradient from blue to purple */
+  color: white;
+  padding: 20px 0; /* Remove horizontal padding for full width */
+  display: flex;
+  justify-content: center; /* Center the container horizontally */
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1400px; /* Set a maximum width for the container */
+  width: 100%; /* Make it responsive by using a percentage */
+  margin: 0 auto; /* Center the container horizontally */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Logo Styling */
+.logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Navigation Styling */
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.nav ul li {
+  display: inline-block;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #ff63a5; /* Pink hover effect */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
